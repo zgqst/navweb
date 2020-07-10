@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  width: 100vw;
+  height: 100%;
+  background: url(skin.jpg) no-repeat;
+  background-size: cover;
+}
+main {
+  margin-top: 100px;
+}
+main #logo {
+  height: 150px;
+  width: 100%;
+  background: url(cat.png) no-repeat center 20px;
+  background-size: 120px;
+}
+main .icon {
+  margin: auto;
+  font-size: 1.5em;
+  margin-left: 5px;
+}
+main .search-wrapper {
+  border: 1px silver solid;
+  box-shadow: 3px 3px 10px -5px black;
+  margin: 0 auto;
+  width: fit-content;
+  border-radius: 20px;
+  display: flex;
+  height: 2em;
+  background: white;
+}
+main .search-wrapper form #search {
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding-left: 5px;
+  width: 300px;
+}
+main .search-wrapper form button {
+  margin-right: 8px;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.1em;
+  font-weight: lighter;
+  cursor: pointer;
+  margin: 4px 10px auto 5px;
+}
+main .cle-wrapper {
+  margin-top: 60px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+main .cle-bottom,
+main .cle-top {
+  transform: translate(25px);
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 125px;
+}
+main .cle-bottom .newsite:hover,
+main .cle-top .newsite:hover {
+  background-color: rgba(231, 231, 231, 0.4);
+}
+main .cle-bottom .newsite,
+main .cle-top .newsite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+main .cle-bottom .newsite span,
+main .cle-top .newsite span {
+  margin-top: 15px;
+  font-size: 0.8em;
+  color: white;
+}
+main .cle-bottom .img-wrapper,
+main .cle-top .img-wrapper {
+  width: 45px;
+  height: 45px;
+  margin-top: 13px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+}
+main .cle-bottom .img-wrapper img,
+main .cle-top .img-wrapper img {
+  position: relative;
+  width: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .cle-bottom .img-wrapper .icon,
+main .cle-top .img-wrapper .icon {
+  font-size: 2em;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-65%, -50%);
+}
+main .cle-bottom img,
+main .cle-top img {
+  border-radius: 50%;
+}
+main .cle-bottom span,
+main .cle-top span {
+  margin-top: 10px;
+  display: block;
+}
+@media (max-width: 500px) {
+  main #logo {
+    transform: scale(0.7);
+    margin-top: -40px;
+  }
+  main .search-wrapper {
+    transform: scale(0.8);
+  }
+  main .search-wrapper form #search {
+    width: 250px;
+  }
+}
